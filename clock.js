@@ -134,8 +134,8 @@ function music() {
 function unlockAudio() {
  
 
-  document.getElementById("sound").currentTime = 0;
-  document.getElementById("sound").play();
+  document.getElementById("1").currentTime = 0;
+  document.getElementById("1").play();
 }
 
 const alarm = document.getElementById("sound");
