@@ -122,24 +122,20 @@ function music() {
   
  
 
-  if (threetime === 1911 && !played) {
+  if (threetime === 730 && !played) {
     const randomAlarm = Math.floor(Math.random() * 10) + 1;
     
-alarm.currentTime = 0;
-    alarm.src = randomAlarm + ".mp3";
-    alarm.load();
-    alarm.play();
-    played = true;
+    document.getElementById(randomAlarm).play();
   }
   if (threetime !== 1850) {
     alarmPlayed = false;
   }
 }
 function unlockAudio() {
-  var alarm = document.getElementById("sound");
+ 
 
-  alarm.currentTime = 0;
-  alarm.play();
+  document.getElementById("sound").currentTime = 0;
+  document.getElementById("sound").play();
 }
 
 const alarm = document.getElementById("sound");
