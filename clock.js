@@ -132,10 +132,9 @@ function music() {
   }
 }
 function unlockAudio() {
- 
-
-  document.getElementById("1").currentTime = 0;
-  document.getElementById("1").play();
+ const a = document.getElementById("sound");
+  a.currentTime = 0;
+  a.play();
 }
 
 const alarm = document.getElementById("sound");
