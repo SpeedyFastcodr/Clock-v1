@@ -136,12 +136,12 @@ alarm.currentTime = 0;
   }
 }
 function unlockAudio() {
-  alarm.play().catch(() => {});
-  alarm.pause();
+  var alarm = document.getElementById("sound");
+
   alarm.currentTime = 0;
-  alarm.src = "boot.mp3";
   alarm.play();
 }
+
 const alarm = document.getElementById("sound");
 alarm.play();
 
