@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="Clock v1.0">
+<link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <button id="sounder" onclick="unlockAudio()">Audio unlock</button>
+      <div id="sleep"></div>
+    <div class=clock>
+    <h1 id=time>LOADING...</h1>
+    </div>
+    <div class=date>
+    <p id=date>Loading...</p>
+    </div>
+    <div class=foreground>
+      <img id="fg" src="mountains!.png">
+    </div>
+    <div class=effect>
+      <img id="bd" src="bd.gif">
+    </div>
+    <div class="weather" id="weather">
+      <p id="wtxt">Fetching weather data...</p>
+      <img id="wpic" src="load.gif">
+    </div>
+    <div class=alert id=log> 
+    <h2>Reminders:</h2>
+    <p id="bt">🪥 Brush your teeth!</p>
+    <p id="wu">GET UP! NOW!</p>
+    
+    </div>
+    <div class="off"></div>
+    <audio id="sound" src="boot.mp3"></audio>
+ <!--
+    <div class="amessage">
+  <p id="ap">Click anywhere to enable audio</p>
+</div>
+-->
+<script src="clock.js"></script>
+
+        </body>
+    
+
+        
+        
+        
